@@ -24,16 +24,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.storage {
-  border-radius: 1rem;
-  text-align: center;
-  color: white;
-}
-
-.storage h1 {
-  font-size: 1.3rem;
-}
-
 ul {
   margin-top: 2.5rem;
 }
@@ -54,6 +44,16 @@ li img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.storage {
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.storage h1 {
+  font-size: 1.3rem;
 }
 
 .storage-bar-container {
