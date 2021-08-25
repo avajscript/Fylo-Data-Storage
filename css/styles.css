@@ -67,7 +67,20 @@ li img {
 .storage-bar {
   height: 20px;
   width: 81.5%;
+  position: relative;
   border-radius: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(orange), to(purple));
   background: linear-gradient(to right, orange, purple);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 3px;
+  background-color: white;
+  border-radius: 4rem;
+  height: 15px;
+  width: 15px;
 }
