@@ -1,5 +1,6 @@
 $dark-blue:blue;
 $very-dark-blue:darkblue;
+$grey:grey;
 $total-gigs:1000;
 $used-gigs:815;
 $linear-gradient-color-one:orange;
@@ -21,14 +22,28 @@ body{
   margin: 20% auto;
 }
 
+.flex-container-vertical{
+  display:flex;
+  flex-direction:column;
+}
+
+.flex-container{
+  display:flex;
+ 
+}
+
 .flex{
+  
+  flex:1;
+  flex-basis:50%;
   background-color: $dark-blue;
-  padding:40px;
+  
 }
 
 .fylo{
   border-radius: 1rem 4rem 1rem 1rem;
   margin-bottom:1.5rem;
+  padding:40px;
 }
 
 ul{
@@ -52,6 +67,7 @@ li{
 }
 
 .storage{
+  padding:40px;
   border-radius:1rem;
   text-align: center;
   color:white;
@@ -77,6 +93,19 @@ li{
   
 }
 
+.storage-bar-footer{
+  text-align: left;
+  h2{
+    display: inline-block;
+   
+  }
+}
+.storage-popup{
+  h1{
+    font-size:3.5rem;
+  }
+}
+
 .icon{
   position:absolute;
   top:50%;
@@ -86,4 +115,10 @@ li{
   border-radius:4rem;
   height:15px;
   width:15px;
+}
+
+// Reusable
+
+.text-align-right{
+  text-align: right;
 }
