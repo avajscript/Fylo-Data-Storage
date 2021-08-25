@@ -1,5 +1,9 @@
 $dark-blue:blue;
 $very-dark-blue:darkblue;
+$total-gigs:1000;
+$used-gigs:815;
+$linear-gradient-color-one:orange;
+$linear-gradient-color-two:purple;
 *{
   margin:0;
   padding:0;
@@ -27,6 +31,15 @@ body{
   margin-bottom:1.5rem;
 }
 
+.storage{
+  border-radius:1rem;
+  text-align: center;
+  color:white;
+  h1{
+    font-size:1.3rem;
+  }
+}
+
 ul{
   margin-top:2.5rem;
 }
@@ -45,4 +58,21 @@ li{
     left:50%;
     transform:translate(-50%, -50%);
   }
+}
+
+.storage-bar-container{
+  background-color:$very-dark-blue;
+  border:4px solid $very-dark-blue;
+  border-radius:2rem;
+  width:100%;
+  margin: 1rem 0;
+}
+
+.storage-bar{
+  height:20px;
+  width: ($used-gigs / $total-gigs) * 100%;
+  
+  border-radius:2rem;
+  background: linear-gradient(to right, $linear-gradient-color-one, $linear-gradient-color-two);
+  
 }
