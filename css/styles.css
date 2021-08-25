@@ -2,3 +2,46 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-size: 16px;
+  background: url("../images/bg-mobile.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.main {
+  width: 90%;
+  margin: 20% auto;
+}
+
+.flex {
+  background-color: blue;
+  padding: 40px;
+}
+
+.fylo {
+  border-radius: 1rem 4rem 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  margin-top: 2.5rem;
+}
+
+li {
+  position: relative;
+  display: inline-block;
+  background-color: darkblue;
+  border-radius: 1rem;
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+}
+
+li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
