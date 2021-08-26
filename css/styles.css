@@ -192,6 +192,9 @@ li img {
     background-position: bottom;
     background-size: 100%;
   }
+  .main {
+    width: 75%;
+  }
   .desktop {
     display: inline-block;
   }
