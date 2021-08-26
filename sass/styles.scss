@@ -15,6 +15,7 @@ body{
   font-size:16px;
   background: url('../images/bg-mobile.png') no-repeat;
   background-size:100% 100%;
+  
 }
 
 .main{
@@ -162,14 +163,24 @@ li{
 .text-align-right{
   text-align: right;
 }
+.relative{
+  position:relative;
+}
 
 .desktop{
   display:none;
 }
 @media screen and (min-width:1052px){
 
+  body{
+    background: url('../images/bg-desktop.png') no-repeat;
+    background-color:$very-dark-blue;
+    background-position:bottom;
+    background-size:100%;
+  }
+
   .desktop{
-    display:block;
+    display:inline-block;
   }
   .flex-container-vertical{
     flex-direction: row;
@@ -195,12 +206,25 @@ li{
 
   .storage{
     margin-top:4rem;
+    h1{
+      text-align: left;
+    }
   }
   .storage-popup{
     transform:none;
     border-radius:1rem 1rem 0 1rem;
     top:-42px;
     right:40px;
+  }
+  .storage-popup-arrow{
+    position:absolute;
+    
+    bottom:-20px;
+    
+    border-left:20px solid transparent;
+   
+    border-top:20px solid white;
+    
   }
   
 }

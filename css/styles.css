@@ -177,13 +177,23 @@ li img {
   text-align: right;
 }
 
+.relative {
+  position: relative;
+}
+
 .desktop {
   display: none;
 }
 
 @media screen and (min-width: 1052px) {
+  body {
+    background: url("../images/bg-desktop.png") no-repeat;
+    background-color: darkblue;
+    background-position: bottom;
+    background-size: 100%;
+  }
   .desktop {
-    display: block;
+    display: inline-block;
   }
   .flex-container-vertical {
     -webkit-box-orient: horizontal;
@@ -208,11 +218,20 @@ li img {
   .storage {
     margin-top: 4rem;
   }
+  .storage h1 {
+    text-align: left;
+  }
   .storage-popup {
     -webkit-transform: none;
             transform: none;
     border-radius: 1rem 1rem 0 1rem;
     top: -42px;
     right: 40px;
+  }
+  .storage-popup-arrow {
+    position: absolute;
+    bottom: -20px;
+    border-left: 20px solid transparent;
+    border-top: 20px solid white;
   }
 }
