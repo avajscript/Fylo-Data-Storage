@@ -32,16 +32,27 @@ body{
  
 }
 
-.flex{
+.flex-1{
   
   flex:1;
   flex-basis:50%;
   background-color: $dark-blue;
   
 }
+.flex-2{
+  flex:1;
+  flex-basis:50%;
+  background-color: $dark-blue;
+}
+
+.flex{
+  flex:1;
+  flex-basis:50%;
+  background-color: $dark-blue;
+}
 
 .fylo{
-  border-radius: 1rem 4rem 1rem 1rem;
+  border-radius: 1rem 8rem 1rem 1rem;
   margin-bottom:1.5rem;
   padding:40px;
 }
@@ -67,6 +78,7 @@ li{
 }
 
 .storage{
+  position:relative;
   padding:40px;
   border-radius:1rem;
   text-align: center;
@@ -95,17 +107,21 @@ li{
 
 .storage-bar-footer{
   text-align: left;
+  margin-bottom:3rem;
   h2{
     display: inline-block;
    
   }
 }
 .storage-popup{
-  position:relative;
+  display:inline-block;
+  position:absolute;
+  right:50%;
+  transform:translate(50%,0);
   color:black;
   background-color:white;
   border-radius:1rem;
-  display:inline-block;
+  
   padding: 10px 20px;
   .h1-container{
     display:inline-block;
@@ -126,6 +142,7 @@ li{
   p{
     display:inline-block;
     vertical-align: middle;
+    color:$grey;
   }
 }
 
@@ -144,4 +161,46 @@ li{
 
 .text-align-right{
   text-align: right;
+}
+
+.desktop{
+  display:none;
+}
+@media screen and (min-width:1052px){
+
+  .desktop{
+    display:block;
+  }
+  .flex-container-vertical{
+    flex-direction: row;
+  }
+
+
+  // Resets 
+  .fylo{
+    margin:0 2rem 0 0;
+  }
+
+  .storage-bar-footer{
+    margin:0;
+  }
+  
+  .flex-1{
+    flex-basis:35%;
+  }
+
+  .flex-2{
+    flex-basis: 65%;
+  }
+
+  .storage{
+    margin-top:4rem;
+  }
+  .storage-popup{
+    transform:none;
+    border-radius:1rem 1rem 0 1rem;
+    top:-42px;
+    right:40px;
+  }
+  
 }
