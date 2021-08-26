@@ -101,8 +101,31 @@ li{
   }
 }
 .storage-popup{
+  position:relative;
+  color:black;
+  background-color:white;
+  border-radius:1rem;
+  display:inline-block;
+  padding: 10px 20px;
+  .h1-container{
+    display:inline-block;
+    vertical-align: middle;
+    margin-right:1rem;
+  }
   h1{
+    display:inline-block;
     font-size:3.5rem;
+    position:relative;
+    &:nth-of-type(2){
+      top:-5px;
+    }
+    &:nth-of-type(3){
+      bottom:-5px;
+    }
+  }
+  p{
+    display:inline-block;
+    vertical-align: middle;
   }
 }
 
