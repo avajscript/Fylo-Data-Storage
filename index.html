@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src = 'script.js'></script>
-  <link rel = 'stylesheet' href = './css/styles.css'/>
-  <title>Document</title>
-</head>
-<body>
-  <div class="main">
-    <div class="flex-container-vertical">
-      <div class="flex-1 fylo">
-        <img src = './images/logo.svg'/>
-       <ul>
-         <li><img src = './images/icon-document.svg'></li>
-         <li><img src = './images/icon-folder.svg'></li>
-         <li><img src = './images/icon-upload.svg'></li>
-       </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="flex-container-vertical">
+        <div class="flex-1 fylo">
+          <img src="./images/logo.svg" />
+          <ul>
+            <li><img src="./images/icon-document.svg" /></li>
+            <li><img src="./images/icon-folder.svg" /></li>
+            <li><img src="./images/icon-upload.svg" /></li>
+          </ul>
+        </div>
+        <!-- End of fylo -->
+        <div class="flex-2 storage">
+          <h1 class="font-light blue-grey-text">
+            You've used <span class="font-heavy">815 GB </span>of your storage
+          </h1>
+          <div class="storage-bar-container">
+            <div class="storage-bar">
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div class="flex-container storage-bar-footer">
+            <div class="flex">
+              <h2>0 GB</h2>
+            </div>
+            <div class="flex text-align-right">
+              <h2>1000 GB</h2>
+            </div>
+          </div>
+          <div class="storage-popup">
+            <div class="h1-container">
+              <h1>1</h1>
+              <h1>8</h1>
+              <h1>5</h1>
+            </div>
+            <p class="font-heavy">GB LEFT</p>
+            <div class="storage-popup-arrow desktop"></div>
+          </div>
+        </div>
+        <!-- End of storage -->
       </div>
-      <!-- End of fylo -->
-      <div class="flex-2 storage">
-        <h1>You've used <span>815 GB </span>of your storage</h1>
-        <div class="storage-bar-container">
-          <div class="storage-bar">
-            
-            <div class="icon"></div>
-          </div>
-        </div>
-        <div class="flex-container storage-bar-footer">
-          <div class="flex">
-            <h2>0 GB</h2>
-          </div>
-          <div class="flex text-align-right">
-            <h2>1000 GB</h2>
-          </div>
-        </div>
-        <div class="storage-popup">
-          
-          <div class="h1-container">
-          <h1>1</h1>
-          <h1>8</h1>
-          <h1>5</h1>
-        </div>
-          <p>GB LEFT</p>
-          <div class="storage-popup-arrow desktop">
-          </div>
-          
-        </div>
-      </div>
-      <!-- End of storage -->
+      <!-- End of flex-container-vertical -->
     </div>
-    <!-- End of flex-container-vertical -->
-  </div>
-  <!-- End of main -->
-</body>
+    <!-- End of main -->
+  </body>
 </html>
